@@ -10,6 +10,29 @@ public class NeoProperties {
 	private String title;
 	@Value("${com.neo.description}")
 	private String description;
+
+	@Value("${com.neo.hdfsUrl}")
+	private String hdfsUrl;
+
+	@Value("${com.neo.hdfsName}")
+	private String hdfsName;
+
+	public String getHdfsUrl() {
+		return hdfsUrl;
+	}
+
+	public void setHdfsUrl(String hdfsUrl) {
+		this.hdfsUrl = hdfsUrl;
+	}
+
+	public String getHdfsName() {
+		return hdfsName;
+	}
+
+	public void setHdfsName(String hdfsName) {
+		this.hdfsName = hdfsName;
+	}
+
 	public String getTitle() {
 		return title;
 	}
